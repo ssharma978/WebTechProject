@@ -1,78 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Professional Experiences</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<!--SEO principles used here -->
+	<meta name="description" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional,user-research, product management, technology, technology student">
+    <meta name="keywords" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student, consulting">
+	
+	
+	<title>Professional Experiences | Saloni Sharma</title>
 
-<style>
-.topnav a {
-  float: center;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	<!-- Imported CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom external CSS -->
+	<link rel="stylesheet" href="shared.css">
+
+	<!-- Page specific CSS -->
+	<style>
+		.company-name {
+			font-size: 24px;
+		}
+
+		.icon {
+			font-size: 14px;
+			margin-right: 10px;
+		}
+
+		.details {
+			font-weight: lighter;
+			padding: 0;
+			padding-left: 20px;
+		}
+    </style>
+
+	<!-- Imported JS for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+//JS changing text on page in response to click on the body 
+function diff(){
+document.getElementById("change").innerHTML="If you think I could be a good fit for your opportunity feel free to contact me.";
+document.getElementById("change").style.fontStyle="italic";
+document.getElementById("change").style.fontSize="xx-large";
 }
-</style>
+
+
+</script>
 </head>
+<body onclick="diff()">
+	<div class="container">
+		<nav id="main-nav" class="navbar navbar-expand-sm navbar-light">
+			<a href="about.htm" id="name" class="navbar-brand">SALONI SHARMA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.htm">Home</a>
+                        <a class="nav-item nav-link" href="about.htm">About</a>
+                        <a class="nav-item nav-link" href="websiteprofessional.htm">Professional Experiences</a>
+                        <a class="nav-item nav-link" href="websiteprojects.htm">Academic Projects</a>
+                        <a class="nav-item nav-link" href="websitetravel.htm">Travel</a>
+                        <a class="nav-item nav-link" href="websitecontactme.htm">Contact</a>
+                        <a class="nav-item nav-link" href="websitesitemap.htm">Site-map</a>
+				</div>
+			</div>
+		</nav>
+	
+			<p class="body-text">My professional experiences range from consulting to social entreprenuership roles. By having such a diverse array of professional roles I have been able to expand my skill basis beyond the things I have applied in the classroom. These skills include hard skills like the skills <a href="mytechincalskills.htm">here</a> but, also include soft skills like developing my emotional intelligence and leadership abilities.</p>
+			<div id="change">
+			<p class="body-text">Below listed in chronological order are my professional experiences.</p>
+		</div>
+		<div><a class="company-name" href="https://www.travelclick.com/" target="_blank">TravelClick</a></div>
+		<div class="row">
+			<div class="col-sm-6">
+				<p><span class="icon">&#128100;</span>Business Intelligence/Product Management Intern</p>
+			</div>
+			<div class="col-sm-6">
+				<p><span class="icon">&#128336;</span>Summer 2019</p>
+			</div>
+		</div>
+		<ul class="details">
+			<li>Analyzed major markets Chicago, Boston, and New York and performed user interviews to evaluate KPIs and potential demand of a new group bookings and function space analytics tool.</li>
+			<li>Conducted a case study to measure the impact of the highest revenue generating tool to provide sales team marketing content.</li>
+			<li>Managed product experiences for customers to understand user behavior through reports on salesforce lightning, pivot table analysis, and conversion rates.</li>
+		</ul>
+		<div><a class="company-name" href="https://atomleap.com/" target="_blank">AtomLeap</a></div>
+		<div class="row">
+			<div class="col-sm-6">
+				<p><span class="icon">&#128100;</span>Fall Intern</p>
+			</div>
+			<div class="col-sm-6">
+				<p><span class="icon">&#128336;</span>Fall 2018</p>
+			</div>
+		</div>
+		<ul class="details">
+			<li>Improved business analysts’ research experience by upgrading the algorithm that collects and analyzes data for corporate clients on high-tech trends including artificial intelligence and smart-heating/cooling technology.</li>
+			<li>Developed programs in R to visualize trends in big data about smart-homes specifically in Asia.</li>
+		</ul>
+		<div><a class="company-name" href="https://www.bcg.com/" target="_blank">The Boston Consulting Group</a></div>
+		<div class="row">
+			<div class="col-sm-6">
+				<p><span class="icon">&#128100;</span>Summer Intern</p>
+			</div>
+			<div class="col-sm-6">
+				<p><span class="icon">&#128336;</span>Summer 2018</p>
+			</div>
+		</div>
+		<ul class="details">
+			<li>Collaborated with teams across U.S., Europe, and India to maintain quality of international mobility programs.</li>
+			<li>Facilitated global launch of new staffing technology aimed at helping coordination between HR and Consultants.</li>
+			<li>Created trainings and managed feedback for product roll-out to understand end-user experience.</li>
+		</ul>
+		<div><a class="company-name" href="https://www.babson.edu/" target="_blank">Babson Sustainability Office</a></div>
+		<div class="row">
+			<div class="col-sm-6">
+				<p><span class="icon">&#128100;</span>Student Intern</p>
+			</div>
+			<div class="col-sm-6">
+				<p><span class="icon">&#128336;</span>Academic year 2017-2018</p>
+			</div>
+		</div>
+		<ul class="details">
+			<li>Developed proposals with an external consulting company to improve campus sustainability and increased student literacy and awareness by 35%.</li>
+			<li>Garnered investments from externals corporations through pitches and executed all sustainability events for the school.</li>
+		</ul>
+	</div>
 
-<body>   
-
-
-        <h3>My Professional Experiences</h3>
-                
-        <div class="topnav">
-                                           
-        <a href="index.htm">About me</a>
-        <a href="websiteprofessional.htm">Professional experiences</a>
-        <a href="websiteprojects.htm">Academic Projects</a>
-        <a href="websitetravel.htm">Travel</a>
-        <a href="websitesitemap.htm">Site Map</a>
-        <a href="websitecontactme.htm">Contact me</a>
-                                
-        </div>
-                        
-                        
-        <div>
-                  
-          <h3>Quick links <a href="websitecontactme.htm">Contact me</a></h3>
-                <hr>
-        <hr>
-</div>
-
-<p> My professional experiences range from consulting to social entreprenuership roles. By having such a diverse array of professional roles I have been able to expand my skill basis beyond the things I have applied in the classroom. 
-    These skills include hard skills like the skills <a href="mytechincalskills.htm"> here</a> but, also include soft skills like developing my emotional intelligence and leadership abilities. 
-</p> 
-
-Below listed in chronological order are my professional experiences
-
-<ul><a href="https://www.travelclick.com/">Travelclick</a>- Business intelligence Product Management Intern (Summer 2019)
-<li>Analyzed major markets Chicago, Boston, and New York and performed user interviews  to evaluate KPIs and potential demand of a new group bookings and function space analytics tool.</li>
-<li>Conducted a case study to measure the impact of the highest revenue generating tool to provide sales team marketing content.</li>
-<li>Managed product experiences for customers to understand user behavior through reports on salesforce lightning, pivot table analysis, and conversion rates.</li> 
-</ul>
-
-<ul><a href="https://atomleap.com/">AtomLeap</a>- Fall Intern  (Fall 2018)
-<li>Improved  business analysts’ research experience by upgrading the algorithm that collects and analyzes data for corporate clients on high-tech trends including artificial intelligence and smart-heating/cooling technology.</li> 
-<li> Developed programs in R to visualize trends in big data about smart-homes specifically in Asia.</li>
-</ul>
-
-<ul><a href="https://www.bcg.com/">The Boston Consulting Group</a>- Summer Intern  (Summer 2018)
-<li>Collaborated with teams across U.S., Europe, and India to maintain quality of international mobility programs.</li>
-<li>Facilitated global launch of new staffing technology aimed at helping coordination between HR and Consultants.</li>
-<li>Created trainings and managed feedback for product roll-out to understand end-user experience.</li>   
-</ul>
-
-<ul><a href="https://www.babson.edu/about/sustainability/about-us/">The Babson Sustainability Office</a>- Student Intern (Academic year 2017-2018)
-    <li>Developed proposals with an external consulting company to improve campus sustainability and increased student literacy and awareness by 35%.</li>
-    <li>Garnered investments from externals corporations through pitches and executed all sustainability events for the school.</li>
-</ul>
-
-
-<p>What <a href="websitesitemap.htm"> else </a> is on this website. </p>
-<a href="#top">Return to top</a>
-
+	
 </body>
 </html>

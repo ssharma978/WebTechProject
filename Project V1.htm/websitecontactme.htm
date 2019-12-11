@@ -1,69 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Me</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<!--SEO principles used here -->
+		<meta name="description" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student">
+        <meta name="keywords" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student">
+	
+	<title>Contact | Saloni Sharma</title>
 
-<style>
-   .topnav a {
-            float: center;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-          }
-</style>
+	<!-- Imported CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom external CSS -->
+	<link rel="stylesheet" href="shared.css">
+
+	<!-- Page specific CSS -->
+	<style>
+		#heading {
+			font-family: "Palatino Linotype", serif;
+			font-size: 28px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		label {
+			margin-top: 20px;
+		}
+
+		#form1 {
+			width: 100%;
+			
+		}
+
+		textarea {
+			width: 100%;
+			height: 200px;
+		}
+
+		#sub,#res {
+			background-color: #FFF;
+			border: 2px solid #000;
+			border-radius: 5px;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			padding: 5px 50px;
+		}
+
+      h5{
+		text-align: center;
+	  }
+	  #cent{
+	text-align: center;
+	  }
+
+	  #enlarge{
+	text-align: center;
+	  }
+        </style>
+	<!-- Imported JS for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+	//JS that on a scroll will make style of text different 
+	function big(){
+   document.getElementById("enlarge").style.fontWeight ="bold";
+   document.getElementById("enlarge").style.fontSize="xx-large";
+}
+
+	function display(){
+        	  //JS form validation 
+		if (document.getElementById("form1").Experience.value =="1") {
+                alert("Please send me an email to clarify what went wrong with your experience");
+            }
+
+            return true;
+		
+        }
+		
+
+	
+	</script>
 </head>
-<body>
+<body onscroll="big()">
+	<div class="container">
+		<nav id="main-nav" class="navbar navbar-expand-sm navbar-light">
+			<a href="about.htm" id="name" class="navbar-brand">SALONI SHARMA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+                                        <a class="nav-item nav-link active" href="index.htm">Home</a>
+                                        <a class="nav-item nav-link" href="about.htm">About</a>
+                                        <a class="nav-item nav-link" href="websiteprofessional.htm">Professional Experiences</a>
+                                        <a class="nav-item nav-link" href="websiteprojects.htm">Academic Projects</a>
+                                        <a class="nav-item nav-link" href="websitetravel.htm">Travel</a>
+                                        <a class="nav-item nav-link" href="websitecontactme.htm">Contact</a>
+                                        <a class="nav-item nav-link" href="websitesitemap.htm">Site-map</a>
+				</div>
+			</div>
+		</nav>
+		<div>
+			
+				<h5>Phone #: 609-423-9970</h5>
+				<h5><a href="mailto:ssharma8@babson.edu">Email me</a></h5>
+		</div>
 
- <h3>Contact Me</h3>
+		<div id="enlarge">
+				<a  href="https://www.linkedin.com/in/saloni----sharma/">Let's Connect!</a>
+		</div>
+
+
+		<p id="heading">If you want to get to know me better contact me via Email.</p>
+		<form action="mailto:ssharma8@babson.edu" method="POST" id="form1">
+			<label for="subject">Subject</label><br>
+		    <input name="subject" type="text"><br>
+		    <label for="body">Email Text</label><br>
+			<textarea name="body"></textarea><br>
+		<!--feedback form on contact page-->
+        <div id="cent">
+         <p id="heading">For some feedback it would be great if you could also let me know how your experience was on this website.</p>
+        <div>
+		<p>How would you rate your user experience today?</p>
+        <select name="Experience">
+        <option value ="5">I loved it! All my question were answered.</option>
+        <option value ="4">It was good.</option>
+        <option value ="3">I am indifferent to my experience on the website.</option>
+        <option value ="2">I am confused by the information on this site. </option>
+        <option value ="1">I feel that none of my questions were answered. </option>
+        </select>
                 
-<div class="topnav">
-                                           
-<a href="index.htm">About me</a>
-<a href="websiteprofessional.htm">Professional experiences</a>
-<a href="websiteprojects.htm">Academic Projects</a>
-<a href="websitetravel.htm">Travel</a>
-<a href="websitesitemap.htm">Site Map</a>
-<a href="websitecontactme.htm">Contact me</a>
-                                
+                        
+						<input id="sub" type="submit" value="Send" onclick="return display()">
+						<input id="res" name="reset" type="reset" value="Clear" />
+		</form>
+	</div>
 </div>
-                      
-          
-          
-<div>
-        <h3>Phone: 609-423-9970</h3>
-        <h3><a href="mailto:ssharma8@babson.edu">Email me</a></h3>
-        <h3><a href="https://www.linkedin.com/in/saloni----sharma/">Let's Connect!</a></h3>
-</div>
-<form method="POST" action="mailto:ssharma8@babson.edu">
-        <h3>If you want to get to know me better. Feel free to ask me any questions here: </h3>
-        <br><textarea class="comment" color="white" rows="8" cols="60"></textarea>
-
-        <h3>For some feedback it would be great if you could also let me know how your experience was on this website</h3>
-        <p>How would you rate your user experience today?</p>
-
-<select name="Experience">
-<option value ="5">I loved it! All my question were answered.</option>
-<option value ="4">It was good.</option>
-<option value ="3">I am indifferent to my experience on the website.</option>
-<option value ="2">I am confused by the information on this site. </option>
-<option value ="1">I feel that none of my questions were answered. </option>
-</select>
-
-<h3>If you have any further questions feel free to contact me or ask a question below.</h3>
-        <br><textarea class="comment" color="white" rows="8" cols="60"></textarea>
-<br>
-
-<button type="submit"> I am done!</button>
-<button type="reset"> Remove all </button>
-        
-</form>
-        <p>What <a href="websitesitemap.htm"> else </a> is on this website. </p>
-        <a href="#top">Return to top</a>
-
 </body>
 </html>

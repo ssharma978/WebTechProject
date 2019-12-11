@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>Homework 3-2</title>
+  <style type="text/css">
+    h1 {
+      color: navy;
+      font-family: Arial, serif;
+    }
+
+    p#instruction {
+      margin-right: 200px;
+    }
+
+    form {
+      padding-left: 50px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      background-color: Silver;
+      font-family: Cursive, serif;
+      color: Navy;
+      width: 60%;
+    }
+
+    input[name="result"] {
+      width: 300px;
+    }
+
+    body {
+      padding-left: 100px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <script>
+  // if you click on image can get to my favorite blog.
+  function favblog() {
+    window.location.href = "https://www.iheartreykjavik.net/";
+  }
+// if you click enter which is key #13 window will go to my image of favorite view of glaciers. 
+  function zoom() {
+    if (window.event.keyCode == 13) {
+      window.location.href = "./Images/Iceland2.jpg";
+    }
+  }
+  </script>
+</head>
+<!--event called onkeypress allows user to click enter key and then reach image -->
+<body onkeypress="zoom()">
+  <h1> Homework 3-4: Study HTML DOM Events</h1>
+  <p id="instruction">
+  
+  </p>
+My website includes my favorite travel experiences, especially my recent trip to Iceland. 
+  <p>
+Iceland has some incredible destinations. For my user I would like to make the map of Iceland much more interactive. 
+If they click on the map I would like it to go to my favorite blog about Iceland. 
+If my user chooses to click the key enter on the website I would like that the map go to a picture of my favorite destination. 
+  </p>
+
+    <p>This is a map of Iceland, the location with the squares around it include some of my favorite destinations.</p>
+   
+</p>
+<p>If you would like to get to my favorite travel blog of Iceland click on the city Reykjavík. </p>
+   
+</p>
+ <map  name="Iceland">
+<!--event fav blog listed below -->
+<area
+ onclick = "favblog()"
+ shape="rect"
+coords="220, 526, 408, 600" 
+ href=https://www.iheartreykjavik.net/
+alt="Reykjavík"
+ title="Reykjavík"
+ target="_blank"
+/>
+
+<area
+
+
+
+  shape="rect"
+coords="550, 532, 702, 629"
+ href="https://guidetoiceland.is/nature-info/jokulsarlon-glacier-lagoon-the-crown-jewel-of-iceland-s-nature"
+alt="Jökulsárlón"
+ title="Jökulsárlón"
+target="_blank"
+/>
+</map>
+<p>My favorite thing about Iceland were the icebergs and glaciers. The location that had the most scenic views of glaciers was the city of Jökulsárlón. If you click key enter on this website you can see one of the best pictures I got of the glaciers. </p>
+<img 
+src="images/icelandr.PNG"
+usemap="#Iceland"
+alt="Map of Iceland"
+title="Clickable Map"/>
+                  
+</p>
+
+
+<p>Professor Instructions</p>
+  
+  <ul>
+    <li><strong>NOT</strong> only use event(s) that we have used in past classes, such as onclick, onmouseover,
+      onmouseout and onchange.
+    </li>
+    In other words, you should study some new events.
+    <li>Be <strong>simple</strong> to explain the usage of the event(s) you select.</li>
+    <li>Be <strong>interesting</strong>. It should solve a real-world problem.</li>
+    <li><strong>NOT</strong> use same example that you find from the w3schools.com or any other website.</li>
+    <li>Add <strong>comments</strong> to describe the event and how your code works.</li>
+  </ul>
+</body>
+</html>

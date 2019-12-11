@@ -1,158 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--SEO principles used here -->
+		<meta name="description" content="Traveling the world">
+  <meta name="keywords" content="travel, Iceland,Icebergs,India, Asia, traveler">
+	<title> Contact | Saloni Sharma</title>
 
-    <style>
-        #iceland {
+	<!-- Imported CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-            width: 250px;
-            height: 200px;
-            margin: 50px;
-        }
+	<!-- Custom external CSS -->
+	<link rel="stylesheet" href="shared.css">
 
+	<!-- Page specific CSS -->
+	<style>
+		#iceland {
+			width: 100%;
+		}
+
+		#slideshow-screen {
+			overflow: hidden;
+			width: 100%;
+		}
+
+		#slide-holder {
+			width: 600%;
+		}
+
+		.slide {
+			width: 16.66%;
+		}
+
+		#slide-controls {
+			margin-bottom: 20px;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		.slide-button {
+			height: 15px;
+			position: relative;
+			width: 15px;
+		}
+
+		.slide-button::after {
+			background-color: #CCC;
+			border-radius: 100%;
+			content: "";
+			height: 15px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 15px;
+		}
+
+		.slide-button:checked::after {
+			background-color: #444;
+		}
+		#sub,#res {
+			background-color: #FFF;
+			border: 2px solid #000;
+			border-radius: 5px;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			padding: 5px 50px;
+		}
+		#form1 {
+			width: 100%;
+			text-align: center;
+		}
+
+  </style>
       
-
-        .topnav a {
-            float: center;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h3>My Travel Experiences</h3>
-
-    <div class="topnav">
-
-        <a href="index.htm">About me</a>
-        <a href="websiteprofessional.htm">Professional experiences</a>
-        <a href="websiteprojects.htm">Academic Projects</a>
-        <a href="websitetravel.htm">Travel</a>
-        <a href="websitesitemap.htm">Site Map</a>
-        <a href="websitecontactme.htm">Contact me</a>
-
-    </div>
-    <div>
-
-        <h3>Quick links <a href="websitecontactme.htm">Contact me</a></h3>
-        <hr>
-    </div>
-
-    <p>As I have mentioned I love to travel.I have traveled 6 out of 7 continents and would love to further explore new
-        countries and cities. In the last 2 years I have especially traveled Europe and the West Coast of the United
-        States.
-        This was due to me studying abroad in Europe and studying in my colleges satellite campus in San Francisco. I
-        hope to regularly update this page with things I loved on my most recent trip and gather your suggestions for my
-        upcoming trip.
-    </p>
-
-    <p>
-        <h3>My most recent trip was to: Iceland </h3>
-
-        <p>This is a map of Iceland, the locations with squares around them were my favorite places to visit.</p>
-       
-                <p>
-                        <map name="Iceland">
-                          <area
-                            shape="rect"
-                            coords="220, 526, 408, 600" 
-                            href="https://visitreykjavik.is/"
-                            alt="Reykjavík"
-                            title="Reykjavík"
-                            target="_blank"
-                          />
-                          <area
-                            shape="rect"
-                            coords="550, 532, 702, 629"
-                            href="https://guidetoiceland.is/nature-info/jokulsarlon-glacier-lagoon-the-crown-jewel-of-iceland-s-nature"
-                            alt="Jökulsárlón"
-                            title="Jökulsárlón"
-                            target="_blank"
-                          />
-                        </map>
-                        <img 
-                          src="images/icelandr.PNG"
-                          usemap="#Iceland"
-                          alt="Map of Iceland"
-                          title="Clickable Map"/>
-                      
-                <p>
-                    This location was just incredible.
-
-                    I had never been to an area that was that beautiful but, also cold and desolate. Although I did not
-                    get to experience the northern lights, I did get to experience an Iceland snowstorm during which we
-                    encountered while we were driving. I have never experienced an avalanche as a real threat until that
-                    day.
-                </p>
-                    <br>
-                <p>
-                    However, I also got to see some of the best of nature.
-                </p>
-                    <br>
-                    <h4> Here are some of those pictures: </h4>
-                    <br>
-                    <div>
-                        
-            <img id="iceland" src="Images/icelandimage1.jpg" alt="Picture of a waterfall" title="Rangarping Eystra">
-            <img id="iceland" src="Images/Iceland2.jpg" alt="Picture of massive icebergs" title="Jökulsárlón">
-            <img id="iceland" src="Images/Iceland3.jpg" alt="Picture of sunset at waterfalls" title="Rangarping Eystra">
-            <img id="iceland" src="Images/Iceland4.jpg" alt="Picture of blue lagoon" title="Blue Lagoon">
-            <img id="iceland" src="Images/Iceland5.jpg" alt="Picture of golden circle" title="Golden Circle">
-            <img id="iceland" src="Images/Iceland6.jpg" alt="Picture of the black beach"
-                title="Sveitarfélagið Hornafjörður Beach">
-            </div>
-
-       
+	<!-- Imported JS for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
 
 
+  
+	  //JS form validation 
+
+	  function display(){
         
-            <h3>The next trip I have planned is to: India</h3>
-            <br>
-            <p>
-            I will be going in November and am actually going to go there for a cousin's wedding which should be
-            exciting as Indian weddings are quite ornate.
-            Although I have been to India quite a bit, as I have grown up, the country never fails to suprise me in new
-            ways each visit.
-            In my spare time off from wedding festivities, I hope to explore Mumbai further.
-        </p>
+		if (document.getElementById("form1").WhereIgo.value =="none") {
+                alert("please select an option");
+            }
 
-        <h3> If you have any suggestions of what I should do at my next destination please let me know here.</h3>
-        <br><textarea class="comment" color="white" rows="8" cols="60"></textarea>
+            return true;
+        }
+		    // Dynamically set coordinates for map areas, here used jquery and javascript 
+			$(document).ready(function() {
+        let originalWidth = 1534,
+          renderedWidth = $("#iceland").width(),
+          ratio = renderedWidth / originalWidth;
+  
+        document.getElementById("reykjavik").coords = Math.round((528 * ratio)).toString() + "," + Math.round((446 * ratio)).toString() + "," + Math.round((72 * ratio)).toString();
+        document.getElementById("glacier").coords = Math.round((878 * ratio)).toString() + "," + Math.round((421 * ratio)).toString() + "," + Math.round((72 * ratio)).toString();
+      });
+
+	  //Allowing user to click through slideshow of images of Iceland 
+  
+      function changeSlide(i) {
+        let index = $(i).index(),
+          marginLeft = "-" + (index * 100).toString() + "%";
+  
+        console.log(marginLeft);
+  
+        $("#slide-holder").css("margin-left", marginLeft);
+      }
 
 
 
+	
 
-        <h3>I am planning my next trip and would love suggestions for where my next destination should be. I know I want
-            to explore Asia but, beyond that I would love your suggestions</h3>
+    </script>
+</head>
+<body>
+	<div class="container">
+		<nav id="main-nav" class="navbar navbar-expand-sm navbar-light">
+			<a href="about.htm" id="name" class="navbar-brand">SALONI SHARMA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="index.htm">Home</a>
+            <a class="nav-item nav-link" href="about.htm">About</a>
+            <a class="nav-item nav-link" href="websiteprofessional.htm">Professional Experiences</a>
+            <a class="nav-item nav-link" href="websiteprojects.htm">Academic Projects</a>
+            <a class="nav-item nav-link" href="websitetravel.htm">Travel</a>
+            <a class="nav-item nav-link" href="websitecontactme.htm">Contact</a>
+            <a class="nav-item nav-link" href="websitesitemap.htm">Site-map</a>
+				</div>
+			</div>
+		</nav>
+		<p class="body-text">As I have mentioned I love to travel.I have traveled 6 out of 7 continents and would love to further explore new countries and cities. In the last 2 years I have especially traveled Europe and the West Coast of the United States. This was due to me studying abroad in Europe and studying in my colleges satellite campus in San Francisco. I hope to regularly update this page with things I loved on my most recent trip and gather your suggestions for my upcoming trip.</p>
+		<h1 class="subheading">Iceland</h1>
+		<p class="body-text">My most recent trip was to Iceland. Below is a map of Iceland, hover your mouse to try to find my favorite locations I visited.</p>
+		<!--Including map with atleast 2 hotspots-->
+		<img id="iceland" src="images/iceland.jpg" alt="Map of Iceland" title="Try clicking near Reykjavik or the bottom of the large green area" usemap="#favmap">
+		<map name="favmap">
+			<area id="reykjavik" shape="circle" coords="" href="https://visitreykjavik.is/" target="_blank" title="Try clicking me">
+			<area id="glacier" shape="circle" coords="" href="https://guidetoiceland.is/nature-info/jokulsarlon-glacier-lagoon-the-crown-jewel-of-iceland-s-nature" target="_blank" title="Try clicking me">
+		</map>
+		<p style="margin-top: 20px;" class="body-text">This location was just incredible. I had never been to an area that was that beautiful but also cold and desolate. Although I did not get to experience the northern lights, I did get to experience an Iceland snowstorm during which we encountered while we were driving. I have never experienced an avalanche as a real threat until that day. However, I also got to see some of the best of nature.</p>
+		<p class="body-text">Here are some of those pictures.</p>
+				<!--Slideshow for photos about Iceland here-->
+		<div id="slideshow-screen">
+			<div id="slide-holder">
+				<img class="slide" src="images/slide1.jpg" alt="Waterfall" title="Rangarping Eystra"><img class="slide" src="images/slide2.jpg" alt="Iceburgs" title="Jökulsárlón"><img class="slide" src="images/slide3.jpg" alt="Sunset" title="Rangarping Eystra"><img class="slide" src="images/slide4.jpg" alt="The Blue Lagoon" title="Blue Lagoon"><img class="slide" src="images/slide5.jpg" alt="The Golden Circle" title="Golden Circle"><img class="slide" src="images/slide6.jpg" alt="The Black Beach" title="Sveitarfélagið Hornafjörður Beach">
+			</div>
+		</div>
+		<div id="slide-controls">
+			<input onclick="changeSlide(this)" class="slide-button" name="slide-buttons" type="radio" checked>
+			<input onclick="changeSlide(this)" class="slide-button" name="slide-buttons" type="radio">
+			<input onclick="changeSlide(this)" class="slide-button" name="slide-buttons" type="radio">
+			<input onclick="changeSlide(this)" class="slide-button" name="slide-buttons" type="radio">
+			<input onclick="changeSlide(this)" class="slide-button" name="slide-buttons" type="radio">
+			<input onclick="changeSlide(this)" class="slide-button" name="slide-buttons" type="radio">
+		</div>
+		<h1 class="subheading">India</h1>
+		<p class="body-text">The next trip I have planned is to India. I will be going there for a cousin's wedding which should be exciting as Indian weddings are quite ornate. Although I have been to India quite a bit, as I have grown up, the country never fails to suprise me in new ways each visit. In my spare time off from wedding festivities, I hope to explore Mumbai further.</p>
+	</div>
 
-        <p>Select where you think I should go next</p>
-    <form method="POST" action="mailto:ssharma8@babson.edu">
-        <select name="Where I go">
-            <option value="5">Beijing</option>
-            <option value="4">Hanoi</option>
-            <option value="3">Tokyo</option>
-            <option value="2">Jaktara</option>
-            <option value="1">Singapore</option>
-        </select>
-    </form>
-
-    
-<button type="submit"> I am done!</button>
-<button type="reset"> Remove all </button>
-
-        <p>What <a href="websitesitemap.htm"> else </a> is on this website. </p>
-        <a href="#top">Return to top</a>
+	<h1 class="subheading">Where should I go next?</h1>
+  <p class="body-text">I am planning my next trip and would love suggestions for where my next destination should be. I know I want
+      to explore Asia but, beyond that I would love your suggestions</p>
+<!--Use of form -->
+<form id="form1" method="POST" action="mailto:ssharma8@babson.edu">
+<p class="body-text">Select where you think I should go next</p>
+  <select name="WhereIgo">
+      <option value="5">Beijing</option>
+      <option value="4">Hanoi</option>
+      <option value="3">Tokyo</option>
+      <option value="2">Jaktara</option>
+	  <option value="1">Singapore</option>
+	  <option value="none">I don't know</option>
+  </select>
+  <input id="sub" type="submit" value="Send" onclick="return display()">
+  <input id="res" name="reset" type="reset" value="Clear" />
+</form>
 
 </body>
-
 </html>
+
+
+

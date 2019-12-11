@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--SEO principles used here -->
+	<meta name="description" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student">
+    <meta name="keywords" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student">
+	
+	
+	<title>About Me | Saloni Sharma</title>
+
+	<!-- Imported CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom external CSS -->
+	<link rel="stylesheet" href="shared.css">
+
+	<!-- Page specific CSS -->
+	<style>
+		.heading {
+			font-family: "Palatino Linotype", serif;
+			font-size: 28px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		#bio-img {
+			width: 100%;
+		}
+
+		hr {
+			margin: 30px 0;
+		}
+    </style>
+    	<!-- Imported JS for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+	<script>
+	//extra animation and Jquery, this animation allows my name to be typed automatically 
+            $(document).ready(function() {
+                let greeting = $("#greeting").text();
+                let letters = greeting.split("");
+    
+                animateText(letters);
+            });
+    
+            function animateText(l) {
+                let text = $("#greeting").text();
+                if (text.length == l.length) {
+                    text = "";
+                }
+                text += l[text.length]
+                $("#greeting").text(text);
+                setTimeout(animateText, 125, l);
+            }
+        </script>
+</head>
+<body>
+<!--Consistent Navbar-->
+<div class="container">
+	<nav id="main-nav" class="navbar navbar-expand-sm navbar-light">
+		<a href="about.htm" id="name" class="navbar-brand">SALONI SHARMA</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link active" href="index.htm">Home</a>
+					<a class="nav-item nav-link" href="about.htm">About</a>
+					<a class="nav-item nav-link" href="websiteprofessional.htm">Professional Experiences</a>
+					<a class="nav-item nav-link" href="websiteprojects.htm">Academic Projects</a>
+					<a class="nav-item nav-link" href="websitetravel.htm">Travel</a>
+					<a class="nav-item nav-link" href="websitecontactme.htm">Contact</a>
+					<a class="nav-item nav-link" href="websitesitemap.htm">Site-map</a>
+			</div>
+		</div>
+	</nav>
+		<h1 id="greeting" class="heading">My name is Saloni Sharma and I am a rising senior at Babson College.</h1>
+		<hr>
+		<div class="row">
+			<div class="col-sm-3">
+				<img id="bio-img" src="Images/me.jpg" alt="Me" title="Me!">
+			</div>
+		<!--My website objective-->
+			<div class="col-sm-9">
+				<h2 class="subheading">Why did I build this website?</h2>
+				<p class="body-text">At my time at Babson College I have been able to experience so much.</p>
+				<p class="body-text">I have been lucky enough to have friends from all around the world and have been in classes that challenge me.</p>
+				<p class="body-text">I have noticed in the professional application process it is hard to get to know someone from a resume or even a linkedIn, I have made this website to fill that gap.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6">
+				<h2 class="subheading">Why Babson?</h2>
+				<p class="body-text">I came to Babson College because I want to one day start my own business.</p>
+				<p class="body-text">I am currently concentrating in technology, entrepreneurship, and design here. I plan to graduate May 2020 and hope to work in business strategy or product management.</p>
+				<p class="body-text">This school has taught me so much about taking risks and thinking differently and I hope to apply this to my future roles.</p>
+			</div>
+			<div class="col-sm-6">
+				<h2 class="subheading">My Interests</h2>
+				<p class="body-text">My interests include painting. I really enjoy painting images of nature. I also like going to see art in different museums and especially like modern art.</p>
+				<p class="body-text">I am also very interested in social impact. On campus I have had the opportunity to be involved with social impact initiatives on campus. I have been on the executive board of the Net Impact club, worked in the sustainability office as an intern, and have assisted the Lewis Institute since my freshman year.Academically I have also focused on learning every side to making sustainable business and technological solutions that can help the world. At my time at Babson I have taken Olin classes and I have also studied at the San Francisco campus which has given me a much deeper understanding of what it takes to make good technological solutions that help people. Being at conferences and being at Olin has proved to me the importance of knowing your products users and learning from industry experts. Applying my knowledge and learning more about social entrepreneurship I feel could help me bring a new perspective to campus and a more useful entrepreneurial mindset to finding solutions for challenging global problems.</p>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<p class="body-text">In my free time I love to kayak, trek, go to the beach, and especially love to travel. If you want to check out some of those experiences click <a href="websitetravel.htm">here.</a></p>
+		</div>
+	</div>
+
+</body>
+</html>

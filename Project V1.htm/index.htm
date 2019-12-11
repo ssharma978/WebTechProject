@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About me</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--SEO principles used here -->
+        <meta name="description" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student">
+    <meta name="keywords" content="Saloni, Saloni Sharma, undergraduate, Babson, Babson college, portfolio, professional, travel blog, user-research, product management, technology, technology student">
+	
+	
+	<title>Home | Saloni Sharma</title>
 
-<style>
-img {
-float:center;
-width: 250px;
-height: 300px;
-border: 2px;
-border-color: black;
-border-style: solid;
-margin: 50px;
+	<!-- Imported CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom external CSS -->
+	<link rel="stylesheet" href="shared.css">
+
+	<!-- Page specific CSS -->
+	<style>
+		.block {
+			padding: 20px;
+			position: relative;
+		}
+
+		.block img {
+			width: 100%;
         }
-        .topnav a {
-                  float: center;
-                  color: black;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-                  font-size: 17px;
-                }
-</style>
 
+        #small{
+         margin: auto;
+         text-align: center;
+        }
+        
+    </style>
+    	<!-- Imported JS for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    	<script>
+        //script for onmouseout and onmouseover, if they hover the slice background image will change according to the the slice they are on 
+            function toHover(i) {
+                i.src = i.src.slice(0, -4) + "-hover.jpg";
+            }
+    
+            function toOriginal(i) {
+                i.src = i.src.slice(0, -10) + ".jpg";
+            }
+        </script>
 </head>
-
 <body>
-
- <h3>About Me</h3>
-                
-<div class="topnav">
-                                   
-<a href="index.htm">About me</a>
-<a href="websiteprofessional.htm">Professional experiences</a>
-<a href="websiteprojects.htm">Academic Projects</a>
-<a href="websitetravel.htm">Travel</a>
-<a href="websitesitemap.htm">Site Map</a>
-<a href="websitecontactme.htm">Contact me</a>
-                        
-</div>
-                
-                
-
-          
-  <h3>Quick links <a href="websitecontactme.htm">Contact me</a></h3>
-        <hr>
-
-<h2>Why I built this?</h2>
-<p> My name is Saloni Sharma and I am a rising senior at Babson College. 
-    At my time at Babson College I have been able to experience so much. 
-    I have been lucky enough to have friends from all around the world and have been in classes that challenge me. 
-    I have noticed in the professional application process it is hard to get to know someone from a resume or even a linkedIn, I have made this website to fill that gap. 
-
-</p> 
-
-    <h2 >Why Babson? </h2>
-    <p> I came to Babson College because I want to one day start my own business. I am currently concentrating in
-        technology, entrepreneurship, and design here. I plan to graduate May 2020 and hope to work in business strategy or product management. 
-        This school has taught me so much about taking risks and thinking differently and I hope to apply this to my future roles. 
-    
-    </p>
-    <img src="Images/Travel.jpg" alt="picture of me" title="Me in Washington D.C. at Womens leadership conference">
-    <hr>
-    <h2 >My Interests</h2>
-    <p>
-    My interests include painting.I really enjoy painting images of nature. I also like going to see art in
-    different museums and especially like  modern art.</p>
-    <p>
-    I am also very interested in social impact. On campus I have had the opportunity to be involved with social impact initiatives on campus. I have been on the executive board of the Net Impact club, worked in the sustainability office as an intern, and have assisted the Lewis Institute since my freshman year.Academically I have also focused on learning every side to making sustainable business and technological solutions that can help the world. At my time at Babson I have taken Olin classes and I have also studied at the San Francisco campus which has given me a much deeper understanding of what it takes to make good technological solutions that help people. Being at conferences and being at Olin has proved to me the importance of knowing your products users and learning from industry experts. Applying my knowledge and learning more about social entrepreneurship  I feel could help me bring a new perspective to campus and a more useful entrepreneurial mindset to finding solutions for health problems. 
-
-    </p>
-    
-    <p>
-    In my free time I love to kayak,trek,go to the beach (hence the music), and especially love to travel, if you want to check out some of those experiences click <a href="websitetravel.htm"> here.</a>
-    </p>
-    
-    <hr>
-    
- 
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/817225065&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-
-    <p>
-    What <a href="websitesitemap.htm"> else </a> is on this website. </p>
-    <a href="#top">Return to top</a>
-    
+    <!--Consistent Navbar-->
+	<div class="container">
+		<nav id="main-nav" class="navbar navbar-expand-sm navbar-light">
+			<a href="about.htm" id="name" class="navbar-brand">SALONI SHARMA</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.htm">Home</a>
+                        <a class="nav-item nav-link" href="about.htm">About</a>
+                        <a class="nav-item nav-link" href="websiteprofessional.htm">Professional Experiences</a>
+                        <a class="nav-item nav-link" href="websiteprojects.htm">Academic Projects</a>
+                        <a class="nav-item nav-link" href="websitetravel.htm">Travel</a>
+                        <a class="nav-item nav-link" href="websitecontactme.htm">Contact</a>
+                        <a class="nav-item nav-link" href="websitesitemap.htm">Site-map</a>
+				</div>
+			</div>
+        </nav>
+        <!--Onmouseout and onmouseover requirements, homepage that can help user explore me-->
+		<div class="row">
+                <div class="block-container col-sm-4">
+                    <div class="block">
+                        <a href="websiteprofessional.htm">
+                            <img onmouseover="toHover(this)" onmouseout="toOriginal(this)" src="images/professional-experiences.jpg" alt="Professional Experiences" title="Outline of my past work">
+                        </a>
+                    </div>
+                </div>
+                <div class="block-container col-sm-4">
+                    <div class="block">
+                        <a href="websiteprojects.htm">
+                            <img onmouseover="toHover(this)" onmouseout="toOriginal(this)" src="images/academic-projects.jpg" alt="Academic Projects" title="How my learning lead to impact">
+                        </a>
+                    </div>
+                </div>
+                <div class="block-container col-sm-4">
+                    <div class="block">
+                        <a href="websitetravel.htm">
+                            <img onmouseover="toHover(this)" onmouseout="toOriginal(this)" src="images/travel.jpg" alt="Travel" title="Where I've been and where to next">
+                        </a>
+                    </div>
+                </div>
+        <!--Music on homepage with on/offcontrols-->
+        
+        <p id="small"><iframe width="50%" height="70"  scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/62574167&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
 </body>
 </html>
